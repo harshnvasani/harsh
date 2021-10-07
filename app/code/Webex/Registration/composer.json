@@ -1,0 +1,37 @@
+{
+    "name": "webex/registration",
+    "description": "Magento 2 modifies registration flow",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "version": "1.0.1",
+    "authors": [
+        {
+            "email": "harshvasani8@gmail.com",
+            "name": "Harsh Vasani"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        },
+         {
+            "type": "git",
+            "url": "https://github.com/harshnvasani/harsh.git"
+        }
+    ],
+    "require": {
+        "magento/framework": "*",
+        "php": ">=7.0.0",
+        "magento/module-customer": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Webex\\Registration\\": ""
+        }
+    }
+}
